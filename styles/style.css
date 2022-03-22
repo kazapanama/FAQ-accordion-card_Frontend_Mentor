@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin:0;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    width: 100wv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%)), url(/images/bg-pattern-desktop.svg);
+    
+}
+
+.bg-card{
+    background-color: white;
+    width:1000px;
+    height: 500px;
+    display: flex;
+    border-radius: 1em;
+}
+
+
+
+.img-box{  
+    position: absolute;
+    
+}
+
+.left-part{
+    width:500px;
+    height: 500px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.info{
+    width:500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+    
+}
+
+.answer{
+    display: none;
+}
+
+.q{
+    display: flex;
+    justify-content: space-between;
+    width:400px;
+    
+}
+
+p{
+    font-size: 14px;
+}
+
+
+.img-girl{
+    margin-right: 150px;
+}
+
+h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+font-size: 32px;
+
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0em;
+
+
+}
+
+.box{
+    margin-bottom: 20px;
+}
+
+.arrow{
+    width: 10px;
+    height: 10px;
+}
+
+.line{
+    width:500px;
+    height:1px;
+    background-color: blue;
+}
