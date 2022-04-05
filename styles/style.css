@@ -54,11 +54,18 @@ body{
     display: none;
 }
 
-.answer-checked{
-    
+.active > .answer{
+    display:block;
     margin-bottom: 20px;
 }
 
+.active > .q{
+    font-weight: 700;
+}
+
+.active > .arrow {
+    transform: rotate(180deg);
+}
 
 
 .q{
@@ -102,6 +109,8 @@ letter-spacing: 0em;
     width: 10px;
     height: 10px;
     padding-top:5px;
+    display: block;
+    
 }
 
 .line{
