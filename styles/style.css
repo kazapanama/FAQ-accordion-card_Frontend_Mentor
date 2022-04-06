@@ -14,7 +14,7 @@ body{
     background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%)), url(/images/bg-pattern-desktop.svg);
 }
 
-.bg-card{
+.bg-card {
     background-color: white;
     width:920px;
     height: 510px;
@@ -22,7 +22,7 @@ body{
     border-radius: 1em;
 }
 
-.left-part{
+.left-part {
     width:400px;
     display: flex;
     justify-content: center;
@@ -30,7 +30,7 @@ body{
     position: relative;
 }
 
-.img-box{  
+.img-box {  
     top:0;
     position: absolute;
     z-index: 5;
@@ -38,19 +38,19 @@ body{
     padding-right: 450px;
 }
 
-.img-girl{
-    padding-right: 200px;
+.img-girl {
+    padding-right: 100px;
     position: relative;
 }
 
-.info{
-    margin-left:23px;
+.info {
+    margin-left:75px;
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 
-.answer{
+.answer { 
     display: none;
 }
 
@@ -64,8 +64,8 @@ body{
     font-weight: 700;
 }
 
-.active > .arrow {
-    transform: rotate(180deg)
+.active > .q > img {
+    transform: rotate(180deg);
 }
 
 .q{
@@ -85,7 +85,7 @@ p{
 }
 
 h1{
-    margin-top: 70px;
+    margin-top: 60px;
     margin-bottom: 33px;
     font-size: 32px;
     font-weight: 700;
@@ -108,5 +108,62 @@ h1{
 .line{
     width:350px;
     height:1px;
-    background-color: blue;
+    background-color: hsl(240, 5%, 91%);
+}
+
+
+@media screen and (max-width: 850px) {
+
+    body{
+        height: 120vh;
+        width: 100vw;
+    }
+   
+    .bg-card{
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    .left-part{
+        width:100;
+        padding-top: 50px; 
+    }
+
+    .img-girl{
+        position: absolute;
+        width: 60vw;
+        padding-bottom: 100px; 
+    }
+
+    .img-box{  
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 5;
+        margin:0;
+        width:20vh;
+        padding:0;
+    }
+
+    .line{
+        width:70vw;
+        height:1px;
+        background-color: hsl(240, 5%, 91%);
+    }
+
+    .info{
+        margin-left:20px;
+    }
+
+    .q{
+       
+        width:70vw;
+        margin-bottom: 17px;
+    }
+
+    p{
+        font-size: 13px;
+        max-width: 70vw;
+    }
+
 }
